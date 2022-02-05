@@ -1,0 +1,3 @@
+C:/Users/admin/Desktop/Internet Explorer/KPI/programming 2/OP_labs/OP_labs_cpp/consoleApp1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/admin/Desktop/Internet Explorer/KPI/programming 2/OP_labs/OP_labs_cpp/consoleApp1/cmake-build-debug/CMakeFiles/consoleApp1.dir
+C:/Users/admin/Desktop/Internet Explorer/KPI/programming 2/OP_labs/OP_labs_cpp/consoleApp1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
