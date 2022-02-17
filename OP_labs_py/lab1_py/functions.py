@@ -8,11 +8,13 @@ def create_input_file(file_name):
         choice = input("You've entered wrong symbol. Try again, please. ")
     if choice == 'a' or choice == 'A':
         if check_file(file_name, 'a+'):
-            print("Enter your text: ")
+            print("Enter your text: "
+                  "Enter Ctrl+C to stop entering.")
             entering(file_name, 'a+')
     else:
         if check_file(file_name, 'w+'):
-            print("Enter your text: ")
+            print("Enter your text: "
+                  "Enter Ctrl+C to stop entering.")
             entering(file_name, 'w+')
 
 
