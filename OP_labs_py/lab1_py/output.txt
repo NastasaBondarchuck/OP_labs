@@ -1,9 +1,0 @@
-hello, my fri end. 
-max loh. 
-am cat, . 
-
-
-Number of deleted one-symbol words - 4
-Number of deleted spaces - 5
-Number of deleted commas - 3
-Number of deleted dots - 7
