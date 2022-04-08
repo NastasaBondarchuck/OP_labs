@@ -15,10 +15,11 @@ namespace lab2_cs
             BirthDay = new DateTime(year, month, day);
             Sex = sex;
         }
+        public enum SexType
+        {
+            Male, Female
+        }
     }
-    public enum SexType
-    {
-        Male, Female
-    }
+    
       
 }
