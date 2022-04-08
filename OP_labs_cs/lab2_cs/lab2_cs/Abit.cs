@@ -2,6 +2,7 @@
 
 namespace lab2_cs
 {
+    
     public class Abit
     {
         public string FullName { get; set; }
@@ -14,10 +15,10 @@ namespace lab2_cs
             BirthDay = new DateTime(year, month, day);
             Sex = sex;
         }
-        public enum SexType
-        {
-            Male, Female
-        }
+    }
+    public enum SexType
+    {
+        Male, Female
     }
       
 }
