@@ -10,7 +10,7 @@ namespace lab2_cs
             string firstFileName = "first.bin", secondFileName = "second.bin";
             FileFunctions.CreateFirstFile(firstFileName);
             ContentFunctions.EnterAbits(firstFileName);
-            List<Abit> AbitsList = FileFunctions.ReadFromFile(firstFileName, '.');
+            List<Abit> AbitsList = FileFunctions.ReadFromFile(firstFileName);
             Console.WriteLine("\n==============================="+
                               "\nList of abits: ");
             ContentFunctions.PrintList(AbitsList);
@@ -19,7 +19,7 @@ namespace lab2_cs
             List<Abit> YoungAbits = ContentFunctions.DeleteOldAbit(AbitsList);
             ContentFunctions.PrintList(YoungAbits);
             ContentFunctions.CreateRecruitList(AbitsList, secondFileName);
-            List<Abit> RecruitsList = FileFunctions.ReadFromFile(secondFileName, '/');
+            List<Abit> RecruitsList = FileFunctions.ReadFromFile(secondFileName);
             Console.WriteLine("\n==============================="+
                               "\nList of recruits: ");
             ContentFunctions.PrintList(RecruitsList);

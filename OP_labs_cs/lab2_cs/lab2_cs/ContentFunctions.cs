@@ -24,9 +24,9 @@ namespace lab2_cs
         }
     
     
-        public static int[] SplitBirthday(string birthStr, char delim)
+        public static int[] SplitBirthday(string birthStr)
         {
-            string[] splitedStr = birthStr.Split(delim);
+            string[] splitedStr = birthStr.Split('.', '/');
             int[] birthArr = {
                 Convert.ToInt32(splitedStr[0]),
                 Convert.ToInt32(splitedStr[1]),
@@ -35,7 +35,7 @@ namespace lab2_cs
             return birthArr;
         }
 
-        public static int Age(DateTime birthDay)
+        private static int Age(DateTime birthDay)
         {
             DateTime now = DateTime.Now;
             int age = now.Subtract(birthDay).Days / 365;
@@ -69,7 +69,7 @@ namespace lab2_cs
                 
             }
         }
-
+        
         public static void CreateRecruitList(List<Abit> AbitsList, string fileName)
         {
             foreach (var abit in AbitsList)

@@ -24,7 +24,7 @@ namespace lab2_cs
                 writer.Write(sex);
             }
         }
-        public static List<Abit> ReadFromFile(string fileName, char delim)
+        public static List<Abit> ReadFromFile(string fileName)
         {
             List<Abit> list = new List<Abit>();
             using (BinaryReader reader = new BinaryReader(File.Open(fileName, FileMode.Open)))
@@ -32,9 +32,9 @@ namespace lab2_cs
                 while (reader.BaseStream.Position != reader.BaseStream.Length)
                 {
                     string fullName = reader.ReadString();
-                    int[] birthDay = ContentFunctions.SplitBirthday(reader.ReadString(), delim);
+                    int[] birthDay = ContentFunctions.SplitBirthday(reader.ReadString());
                     string Sex = reader.ReadString();
-                    Abit.SexType sex = Sex == "m" || Sex == "M" ? Abit.SexType.Male : Abit.SexType.Female;
+                    Abit.SexType sex = Sex == "Male" || Sex == "m" || Sex == "M" ? Abit.SexType.Male : Abit.SexType.Female;
                     Abit abit = new Abit(fullName, birthDay[0], birthDay[1], birthDay[2], sex);
                     list.Add(abit);
                 }
