@@ -22,11 +22,9 @@ namespace lab2_cs
                 checkEntering = Console.ReadLine();
             } while (checkEntering == "y" || checkEntering == "Y");
         }
-    
-    
         public static int[] SplitBirthday(string birthStr)
         {
-            string[] splitedStr = birthStr.Split('.', '/');
+            string[] splitedStr = birthStr.Split('.');
             int[] birthArr = {
                 Convert.ToInt32(splitedStr[0]),
                 Convert.ToInt32(splitedStr[1]),
@@ -34,7 +32,6 @@ namespace lab2_cs
             };
             return birthArr;
         }
-
         private static int Age(DateTime birthDay)
         {
             DateTime now = DateTime.Now;
@@ -55,7 +52,6 @@ namespace lab2_cs
 
             return youngAbits;
         }
-
         public static void PrintList(List<Abit> AbitsList)
         {
             foreach (var abit in AbitsList)
@@ -69,7 +65,6 @@ namespace lab2_cs
                 
             }
         }
-        
         public static void CreateRecruitList(List<Abit> AbitsList, string fileName)
         {
             foreach (var abit in AbitsList)
@@ -81,6 +76,5 @@ namespace lab2_cs
                 }
             }
         }
-        
     }
 }

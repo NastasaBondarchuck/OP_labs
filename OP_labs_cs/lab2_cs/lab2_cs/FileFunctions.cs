@@ -15,6 +15,11 @@ namespace lab2_cs
             BinaryWriter file = new BinaryWriter(File.Open(fileName, checkFile == "a" || checkFile == "A" ? FileMode.OpenOrCreate : FileMode.Create));
             file.Close();
         }
+        public static void CreateSecondFile(string fileName)
+        {
+            BinaryWriter file = new BinaryWriter(File.Open(fileName, FileMode.Create));
+            file.Close();
+        }
         public static void WriteToFile(string fileName, string name, string birthday, string sex)
         {
             using (BinaryWriter writer = new BinaryWriter(File.Open(fileName, FileMode.Append)))
@@ -41,11 +46,6 @@ namespace lab2_cs
             }
 
             return list;
-        }
-
-        public static void CreateRecruitsFile(string fileName, string name, string birthday, string sex)
-        {
-            
         }
     }
 }

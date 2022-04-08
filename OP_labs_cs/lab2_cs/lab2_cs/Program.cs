@@ -18,14 +18,13 @@ namespace lab2_cs
                               "\nList of abits younger than 35: ");
             List<Abit> YoungAbits = ContentFunctions.DeleteOldAbit(AbitsList);
             ContentFunctions.PrintList(YoungAbits);
+            FileFunctions.CreateSecondFile(secondFileName);
             ContentFunctions.CreateRecruitList(AbitsList, secondFileName);
             List<Abit> RecruitsList = FileFunctions.ReadFromFile(secondFileName);
             Console.WriteLine("\n==============================="+
                               "\nList of recruits: ");
             ContentFunctions.PrintList(RecruitsList);
-
+            Console.ReadLine();
         }
-        
-        
     }
 }

@@ -1,5 +1,3 @@
-# import os.path
-# import keyboard as kb
 
 def create_input_file(file_name):
     choice = input("Enter 'w' to create new file || "
@@ -75,5 +73,3 @@ def create_output_file(file_name, content, count_words, count_spaces, count_comm
                        "\nNumber of deleted spaces - " + str(count_spaces) +
                        "\nNumber of deleted commas - " + str(count_commas) +
                        "\nNumber of deleted dots - " + str(count_dots))
-
-
