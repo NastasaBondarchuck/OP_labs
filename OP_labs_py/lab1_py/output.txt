@@ -1,0 +1,8 @@
+hello, my fr ie . . 
+123 , . 
+
+
+Number of deleted one-symbol words - 2
+Number of deleted spaces - 5
+Number of deleted commas - 3
+Number of deleted dots - 8

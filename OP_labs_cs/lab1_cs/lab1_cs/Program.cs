@@ -6,8 +6,7 @@ namespace lab1_cs
     {
         public static void Main(string[] args)
         {
-            string inputFileName = "input.txt", 
-                outputFileName = "output.txt";
+            string inputFileName = "input.txt", outputFileName = "output.txt";
             FileFunc.CreateInputFile(inputFileName);
             string inputContent = FileFunc.ReadFile(inputFileName);
             Console.Write("\n===============================\n" +
