@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 
 namespace lab2_cs
@@ -44,7 +43,6 @@ namespace lab2_cs
                     list.Add(abit);
                 }
             }
-
             return list;
         }
     }
