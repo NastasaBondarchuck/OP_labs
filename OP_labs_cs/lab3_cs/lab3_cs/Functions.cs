@@ -36,7 +36,7 @@ namespace lab3_cs
             Vector maxVector = array[0];
             foreach (var vector in array)
             {
-                if (vector.GetLength() >= maxVector.GetLength()) { maxVector = vector;}
+                if (vector.Length >= maxVector.Length) { maxVector = vector;}
             }
 
             return maxVector;
@@ -45,9 +45,9 @@ namespace lab3_cs
         {
             foreach (var vector in array)
             {
-                Console.WriteLine($"Coordinates: ({vector.X}; {vector.Y}; {vector.Z})\t Length: {vector.GetLength()}.");
+                Console.WriteLine($"Coordinates: ({vector.X}; {vector.Y}; {vector.Z})\t Length: {vector.Length}.");
             }
-            Console.WriteLine($"The longest vector has coordinates: ({maxVector.X}; {maxVector.Y}; {maxVector.Z})\t Length: {maxVector.GetLength()}.");
+            Console.WriteLine($"The longest vector has coordinates: ({maxVector.X}; {maxVector.Y}; {maxVector.Z})\t Length: {maxVector.Length}.");
         }
     }
 }
