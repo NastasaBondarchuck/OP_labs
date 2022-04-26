@@ -9,7 +9,7 @@ namespace lab4_cs
             BoolVector B1 = Functions.CreateVector();
             BoolVector B2 = new BoolVector();
             Functions.CheckLength(B1, B2);
-            Functions.PrintVector(B1, "B1");
+            Functions.PrintVector(B1, "\nB1");
             Functions.PrintVector(B2, "B2");
             B1 = ~B1;
             Functions.PrintVector(B1, "~B1");

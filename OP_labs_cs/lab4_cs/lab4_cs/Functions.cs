@@ -40,9 +40,11 @@ namespace lab4_cs
                     {
                         checkEntering = false;
                         Console.WriteLine("Enter correct bool vector: ");
+                        break;
                     }
                 }
             } while (!checkEntering);
+
             BoolVector B = new BoolVector(vectorValue.ToList());
             return B;
         }
