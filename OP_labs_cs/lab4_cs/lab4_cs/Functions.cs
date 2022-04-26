@@ -43,7 +43,6 @@ namespace lab4_cs
                     }
                 }
             } while (!checkEntering);
-
             BoolVector B = new BoolVector(vectorValue.ToList());
             return B;
         }
