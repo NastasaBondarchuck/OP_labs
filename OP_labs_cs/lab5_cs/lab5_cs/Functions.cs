@@ -24,7 +24,7 @@ namespace lab5_cs
             {
                 int first = rand.Next(1,32);
                 int second = rand.Next(1, 12);
-                int third = rand.Next(0, 2030);
+                int third = rand.Next(0, 100);
                 Date date = new Date(first, second, third);
                 DatesList.Add(date);
             }
@@ -47,5 +47,21 @@ namespace lab5_cs
             }
             return TimesList;
         }
+
+        public static List<Time> Comparing(List<Date> datesList)
+        {
+            List<Time> timeFromDate = new List<Time>();
+            foreach (var date in datesList)
+            {
+                if (date.Third <= 59)
+                { 
+                    Time time = new Time(date.First, date.Second, date.Third);
+                    timeFromDate.Add(time);
+                }
+            }
+            
+            return timeFromDate;
+        }
+        
     }
 }
