@@ -2,9 +2,9 @@
 {
     public abstract class Triad
     {
-        public int First;
-        public int Second;
-        public int Third;
+        public int First { get; set; }
+        public int Second { get; set; }
+        public int Third { get; set; }
         
         protected Triad(int first, int second, int third)
         {
