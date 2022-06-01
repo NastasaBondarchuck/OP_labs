@@ -24,14 +24,8 @@ namespace lab5_cs
             {
                 First++;
                 if (Days30.Contains(Second)) { if (First == 30) { IncreaseSecond(1); First = 0; } }
-                else if (Days31.Contains(Second))
-                {
-                    if (First == 31) { IncreaseSecond(1); First = 0; }
-                }
-                else
-                {
-                    if (First == 28) { IncreaseSecond(1); First = 0; }
-                }
+                else if (Days31.Contains(Second)) { if (First == 31) { IncreaseSecond(1); First = 0; } }
+                else { if (First == 28) { IncreaseSecond(1); First = 0; } }
             }
         }
         public override void IncreaseSecond(int num)
