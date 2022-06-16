@@ -1,8 +1,16 @@
 from Triad import Triad
-from functions import correction
 
 Days31 = [1, 3, 5, 7, 8, 10, 12]
 Days30 = [4, 6, 9, 11]
+
+
+def correction(num):
+    num_ = num
+    if 10 > int(num) >= 0:
+        num_ = "0" + str(num)
+    elif 0 > int(num) > -10:
+        num_ = "-0" + str(-int(num))
+    return num_
 
 
 class Date (Triad):

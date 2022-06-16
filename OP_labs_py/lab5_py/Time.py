@@ -1,6 +1,15 @@
 from functions import *
 
 
+def correction(num):
+    num_ = num
+    if 10 > int(num) >= 0:
+        num_ = "0" + str(num)
+    elif 0 > int(num) > -10:
+        num_ = "-0" + str(-int(num))
+    return num_
+
+
 class Time(Triad):
     def __init__(self, first, second, third):
         super().__init__(first, second, third)

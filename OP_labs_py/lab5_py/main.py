@@ -19,12 +19,12 @@ print("\nList of dates, which can be times: "
 for time in times_from_dates:
     time.print_time()
 
-print("Reduced dates: ")
+print("\nReduced dates: ")
 for date in dates_list:
     date.reduce_first(5)
     date.print_date()
 
-print("Increased times: ")
+print("\nIncreased times: ")
 for time in times_list:
     time.increase_second(15)
     time.print_time()
